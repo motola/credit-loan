@@ -1,0 +1,122 @@
+body {
+    padding:0;
+    margin:0;
+    color: white;
+     
+    font-family: 'century Gothic',Courier New, Courier, monospace;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+#main-section {
+    border-top: 2px solid blue;
+    text-align:center;
+    display: inline-block;
+    background-image:url(14.jpg);
+    width: 100%;
+   
+
+}
+header {
+    width: 100%;
+    
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+#logo img {
+      width: 190px;
+      margin: 0.2em 2%;
+      float:left;
+}
+
+
+nav ul {
+    
+    list-style: none;
+    margin-right: 5%;
+   float:right;
+
+}
+
+nav li {
+    color:blue;
+    width: 60px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    padding: 3px;
+    text-align:center;
+  
+}
+
+nav li:hover {
+    color: navy;
+    border-color:navy;
+}
+
+
+
+#main-section h1 {
+    
+    font-size: 24px;
+     margin: 21% 1% 0;
+     color: blue;;
+
+}
+
+#main-section p{
+    display: inline-block;
+    margin: 1% 0.25%;
+     font-size: 14px;
+    color:white;
+   
+    
+}
+
+#main-button {
+   clear:both;
+    margin: 6% 0 12%;
+}
+
+#main-button button  {
+    background-color:blue;
+    color: white;
+    border-radius: 31px;
+    border:  2px solid;
+    box-sizing:border-box;
+    font-family: 'century Gothic',Courier New, Courier, monospace; 
+    padding: 10px;
+}
+
+#main-button button a {
+    
+    color: white;
+}
+
+
+
+#main-button button:hover {
+    background-color: navy;
+}
+
+
+
+footer {
+    
+   text-align:center;
+    margin-bottom: -3%;
+    border-top:  3px solid blue;
+    
+
+
+}
+
+footer p {
+    color: blue;
+}
