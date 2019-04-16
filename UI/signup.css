@@ -88,7 +88,7 @@ input {
     display: inline;
 }
 
-button {
+input[type=submit],value {
     width: 25%;
     margin-top: 5%;
     margin-left: 18%;
@@ -103,7 +103,7 @@ button {
 }
 
 
-button:hover {
+input[type=submit]:hover {
     border: 2px solid blue;
 }
 footer {
