@@ -1,0 +1,122 @@
+body {
+    padding:0;
+    margin:0;
+    color: blue;
+     
+    font-family: 'century Gothic',Courier New, Courier, monospace;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    width: 100%;
+    
+    font-weight: 600;
+    font-size: 12px;
+
+}
+
+
+#logo img {
+      width: 190px;
+      margin: 0.2em 2%;
+      float:left;
+}
+
+
+nav ul {
+    
+    list-style: none;
+    margin-right: 5%;
+   float:right;
+
+}
+
+nav li {
+    color:blue;
+    width: 60px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    padding: 3px;
+    text-align:center;
+  
+}
+
+nav li:hover {
+    color: navy;
+    border-color:navy;
+}
+#wrapper {
+    color:blue;
+    border-top: 2px solid blue;
+    width:100%;
+    padding-top:20px;
+    clear: right;
+    
+    
+}
+
+#wrapper h1 {
+     text-align:center;
+    font-size: 20px;
+    color:blue; 
+    padding-bottom:30px;
+}
+
+#main-form {
+   width: 80%;
+   padding:0 0 0 20%;
+}
+
+
+#main-form p {
+     text-align:left;
+    padding:0;
+    font-weight: 600;
+    color: grey;
+}
+
+input {
+    border: 2px solid blue;
+    border-radius: 2px;
+    width:70%;
+    height:30px;
+    display: inline;
+}
+
+button {
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 18%;
+    padding: 2%;
+
+    border:1px solid blue;
+    font-family: 'century Gothic' Courier New, Courier, monospace;
+    border-radius: 3px;
+    text-align:center;
+    background: white;
+    color: blue;
+}
+
+
+button:hover {
+    border: 2px solid blue;
+}
+footer {
+    
+    text-align:center;
+     margin-bottom: -3%;
+     border-top:  3px solid blue;
+     
+ 
+ 
+ }
+ 
+ footer p {
+     color: blue;
+ }
+ 
