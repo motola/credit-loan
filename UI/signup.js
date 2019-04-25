@@ -57,10 +57,10 @@ const emailValidation = (email) => {
 } 
 
 const alphaNumericPassword = (passWord) => {
-  let alphaNumeric = /^(?=.{8,})/;
+  let alphaNumeric = /^.{4,8}$/;
   passWord.value.match(alphaNumeric)
   ? document.getElementById('r4').innerHTML = "<div style='display:none;'></div>"
-  : document.getElementById('r4').innerHTML = "<div style='padding:8px; border: 2px solid red; border-radius: 6px;'>*Password must contain 8 characters</div>"
+  : document.getElementById('r4').innerHTML = "<div style='padding:8px; border: 2px solid red; border-radius: 6px;'>*Password must contain 4-8 characters</div>"
 
 
 }
