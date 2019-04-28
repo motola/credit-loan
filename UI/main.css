@@ -1,20 +1,22 @@
+
+/* style for the body */
 body {
     padding:0;
     margin:0;
-    color: white;
+    color: #ffff;
      
     font-family: 'century Gothic',Courier New, Courier, monospace;
     
 }
-
+/* style for the all hyperlinks */
 a {
     text-decoration: none;
 }
 
 
-
+/* style for the section */
 #main-section {
-    border-top: 2px solid blue;
+    border-top: 2px solid #0000FF;
     text-align:center;
     display: inline-block;
     background-image:url(14.jpg);
@@ -22,6 +24,7 @@ a {
    
 
 }
+/* style for the header*/
 header {
     width: 100%;
     
@@ -29,14 +32,14 @@ header {
     font-size: 12px;
 }
 
-
+/* style for quick credit logo */
 #logo img {
       width: 190px;
       margin: 0.2em 2%;
       float:left;
 }
 
-
+/* style for the navigation */
 nav ul {
     
     list-style: none;
@@ -44,79 +47,80 @@ nav ul {
    float:right;
 
 }
-
+/* style for the navigation list */
 nav li {
-    color:blue;
+    color:#0000FF;
     width: 60px;
-    border: 1px solid blue;
+    border: 1px solid #0000FF;
     border-radius: 15px;
     padding: 3px;
     text-align:center;
   
 }
-
+/* style for the navigation  hovering */
 nav li:hover {
-    color: navy;
-    border-color:navy;
+    color: #000080;
+    border-color:#000080;
 }
 
-
+/* style for the section level one heading element */
 
 #main-section h1 {
     
     font-size: 24px;
      margin: 21% 1% 0;
-     color: blue;;
+     color:#0000FF;
 
 }
+/* style for the section paragraph element */
 
 #main-section p{
     display: inline-block;
     margin: 1% 0.25%;
      font-size: 14px;
-    color:white;
+    color:#FFFF;
    
     
 }
-
+/* style for the button */
 #main-button {
    clear:both;
     margin: 6% 0 12%;
 }
 
 #main-button button  {
-    background-color:blue;
-    color: white;
+    background-color:#0000FF;
+    color:#ffff;
     border-radius: 31px;
     border:  2px solid;
     box-sizing:border-box;
     font-family: 'century Gothic',Courier New, Courier, monospace; 
     padding: 10px;
 }
-
+/* style for the button link */
 #main-button button a {
     
-    color: white;
+    color:#FFFF;
 }
 
 
-
+/* style for the button hover*/
 #main-button button:hover {
-    background-color: navy;
+    background-color:#000080;
 }
 
-
+/* style for the footer */
 
 footer {
     
    text-align:center;
     margin-bottom: -3%;
-    border-top:  3px solid blue;
+    border-top:  3px solid #0000FF;
     
 
 
 }
-
+/* style for the footer's paragraph */
 footer p {
-    color: blue;
+    color: #0000FF;
 }
