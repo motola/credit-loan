@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign up to Quick Credit</title>
+    <link rel="icon" type="img/png" href="favicon.fw.png">
     <link rel="stylesheet" href="signup.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
@@ -22,23 +23,27 @@
         <h1>Do what matters first,
         Sign Up to get started
         </h1>  
-    <form id="main-form">
-     
-       <p class="">First name<p>
-         <input type="text" id="firstname" name="firstname" placeholder=" Insert your common name">
+    <form novalidate id="main-form" onsubmit="return validate()">
+       <div id="head"></div>
+      <p>First name<p>
+         <input type="text" class="finput" id="firstname" name="firstname" placeholder=" Insert your common name">
+         <div class="fresult" id="r1"></div>
        <p>Last name<p>
-         <input type="text" id="lastname" name="lastname" placeholder=" Insert your surname">
+         <input type="text" class="finput" id="lastname" name="lastname" placeholder=" Insert your surname">
+         <div class="fresult" id="r2"></div>
        <p>Email<p>
-         <input type="email" id="email" name="emial" placeholder=" Your official email address">
-        <p>Phone Number<p>
-         <input type="number" id="phonenumber" name="phonenumber" placeholder=" Your mobile your mobile number">
+         <input type="email" class="finput" id="email" name="email" placeholder=" Your official email address">
+         <div class="fresult" id="r3"></div>
         <p>Password<p>
-                <input type="number" id="pword" name="password" placeholder=" Keep your account secret">
+         <input type="password" class="finput" id="pword" name="password" placeholder=" Keep your account secret">
+         <div class="fresult" id="r4"></div>
                 <br>
          <input type="submit" id="submit" value="Sign Up"> 
+         <p class="set">Already have an account?<a href="signin.html"> Sign in</a></p>
      </form>
    </div>
        <footer><p> &copy; Quick Credit, Inc 2019.</p></footer>
   </div> 
+  <script src="signup.js"></script>
 </body>
 </html>
