@@ -1,0 +1,148 @@
+body {
+    padding:0;
+    margin:0;
+    color: #0000FF;
+     
+    font-family: 'century Gothic',Courier New, Courier, monospace;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    width: 100%;
+    
+    font-weight: 600;
+    font-size: 12px;
+
+}
+
+
+#logo img {
+      width: 190px;
+      margin: 0.2em 2%;
+      float:left;
+}
+
+
+nav ul {
+    
+    list-style: none;
+    margin-right: 5%;
+   float:right;
+
+}
+
+nav li {
+    color:#0000FF;
+    width: 60px;
+    border: 1px solid #0000FF;
+    border-radius: 15px;
+    padding: 3px;
+    text-align:center;
+  
+}
+
+nav li:hover {
+    color: #000080;
+    border-color:#000080;
+}
+#wrapper {
+    color:#0000FF;
+    background:#0000FF;
+    border-top: 2px solid #0000FF;
+    width:100%;
+    padding-top:20px;
+    clear: right;
+    
+    
+}
+
+#wrapper h1 {
+     text-align:center;
+    font-size: 20px;
+    color: #fff; 
+    padding-bottom:30px;
+}
+
+h3 {
+    text-align:center;
+    color:#fff;
+}
+
+#main-form {
+   width: 80%;
+   padding:0 0 0 20%;
+}
+
+
+#main-form p {
+     text-align:left;
+    padding:0;
+    font-weight: 600;
+    color: #fff;
+}
+
+input {
+    border: 2px solid #0000FF;
+    border-radius: 2px;
+    width:70%;
+    height:30px;
+    display: inline;
+}
+
+input[type=submit] {
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 18%;
+    margin-bottom: 4%;
+    padding: 2%;
+
+    border:1px solid #0000FF;
+    font-family: 'century Gothic' Courier New, Courier, monospace;
+    border-radius: 3px;
+    text-align:center;
+    background: #fff;
+    color: #0000FF;
+}
+
+
+input[type=submit]:hover {
+    border: 2px solid #fff;
+}
+
+.fresult,#head {
+    background-color: #ee8585;
+    color: #e40d0d;
+    width: 30%;
+    font-weight: 800;
+    
+}
+#main-form .set {
+   padding-bottom: 15px;
+    display: block;
+}
+.set a {
+    color: #000080;
+}
+.set a:hover {
+    text-decoration: underline;
+    color:#fff;
+}
+footer {
+    
+    text-align:center;
+   
+    
+     
+ 
+ 
+ }
+ 
+ footer p {
+     color: #0000FF;
+ }
+ 
