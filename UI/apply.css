@@ -1,0 +1,160 @@
+/* defining width and height for all element using asterisk sign */
+* {
+    box-sizing: border-box
+}
+
+/* style the body */
+body {
+    padding:0;
+    margin:0;
+    color: #000;
+     
+    font-family: 'century Gothic',Courier New, Courier, monospace;
+    
+}
+/* default style for all links */
+a {
+    text-decoration: none;
+}
+
+
+/* style for section */
+#main-section {
+    border-top: 2px solid #0000FF;
+    text-align:center;
+    display: inline-block;
+    background-image:url(14.jpg);
+    width: 100%;
+   
+
+}
+/* style for heading*/
+header {
+    width: 100%;
+    
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* style for quick credit logo */
+#logo img {
+      width: 190px;
+      margin: 0.2em 2%;
+      float:left;
+}
+
+/* style sign in navigation */
+nav ul {
+    
+    list-style: none;
+    margin-right: 5%;
+   float:right;
+
+}
+/* style for sign in nav */
+nav li {
+    color:	#0000FF;
+    width: 60px;
+    border: 1px solid	#0000FF;
+    border-radius: 15px;
+    padding: 3px;
+    text-align:center;
+  
+}
+/* style for hovering */
+nav li:hover {
+    color:#000080;
+    border-color:#000080;
+}
+
+
+
+/* style for the sub header(welcome) */
+.sub-header {
+    clear: both;
+    background-color:	#0000FF;
+    padding: 0.5%;
+    color:#fff;
+
+}
+
+
+
+
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  ;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:	#0000FF;
+  color:#FFFF;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color:#000080;
+  color:active;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 400px;
+  font-weight: bold;
+}
+/* style for input element */
+
+input {
+    border: 2px solid	#0000FF;
+    border-radius: 2px;
+    width:70%;
+    height:30px;
+    display: inline;
+}
+/* style for sign up button*/
+
+input[type=submit],value {
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 18%;
+    padding: 2%;
+
+    border:1px solid #0000FF;
+    font-family: 'century Gothic' Courier New, Courier, monospace;
+    border-radius: 3px;
+    text-align:center;
+    background: #FFF;
+    color: blue;
+}
+/* style for submit hover */
+
+input[type=submit]:hover {
+    border: 2px solid 	#0000FF;
+}
