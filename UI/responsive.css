@@ -34,6 +34,27 @@
  */
 
 
+<<<<<<< HEAD
+/*****   Responsive styling for signup/signin page begins here */
+
+#main-form {
+    width: 70;
+   padding:0 0 0 25%;
+}
+
+input[type=submit] {
+    width: 14%;
+    padding: 1%;
+    margin-left: 23%;
+}
+
+#main-form .set {
+    margin-left: 14%;
+    color:  #000080;
+}
+/*****   Responsive styling for signup/signin page ends here */
+=======
+>>>>>>> develop
 
 }
 
@@ -71,5 +92,23 @@
     }
 /*****   Responsive styling for homepage page ends here */
 
+<<<<<<< HEAD
+/*****   Responsive styling for signup/signin page*/
+#main-form {
+       
+    width: 60%;
+    padding:0 0 0 33%;
+ }
+
+
+ #main-form .set {
+    margin-left: 14%;
+    color:  #000080;
+}
+
+
+ /*****   Responsive styling for signup/signin page ends here */
+=======
+>>>>>>> develop
 
 }
