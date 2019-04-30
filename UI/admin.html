@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin sign in</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="icon" type="img/png" href="favicon.fw.png">
+    <link rel="stylesheet" href="admin-res.css">
+    
+</head>
+<style>
+
+
+
+</style>
+</head>
+<body>
+        <div id="main-body">
+                <header>
+                  <a href="index.html" id="logo"> <img src="./quick credict.fw.png"/></a>
+                  <nav>
+                    <ul>
+                    <li><a href="signin.html">Sign in</a> </li>
+                    </ul>
+                  </nav> 
+                </header>
+        <div class="sub-header">
+                <h2>Welcome Admin</h2>
+                <p>Quick Credit Backend Administrator </p>
+        </div>
+        <div id="main-tab">
+        <div class="tab">
+              <button class="tablinks" onclick="adminPortal(event, 'verify')" id="defaultOpen">Verify Client Loan</button>
+              <button class="tablinks" onclick="adminPortal(event, 'allLoans')">All Loan Applications</button>
+              <button class="tablinks" onclick="adminPortal(event, 'unRepaid')">Unrepaid Current Loans</button>
+              <button class="tablinks" onclick="adminPortal(event, 'repaid')">Repaid Loans</button>
+              <button class="tablinks" onclick="adminPortal(event, 'specifiedLoan')">Specified Loan Application</button>
+              <button class="tablinks" onclick="adminPortal(event, 'approve0rReject')">Approve/Reject Loan Application</button>
+              <button class="tablinks" onclick="adminPortal(event, 'postLoan')">Post Loan to Client</button>
+        </div>
+
+        <div id="verify" class="tabcontent">
+
+                <div id="main-section">
+                  <table id="main-table">
+                    <tr>
+                      <th>Email</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Password</th>
+                      <th>Address</th>
+                      <th>Status</th>
+                      <th id="">Mark</th>
+                      
+                    </tr>
+                    <tr>
+                      <td>emekapete@yahoo.com</td>
+                      <td>Emeka</td>
+                      <td>Pete</td>
+                      <td>cottage2100</td>
+                      <td>17a, thomas street maryland, Lagos</td>
+                      <td>Verified</td>
+                      <td><button type="submit" class="mark" id="verify">verify</button></td>
+                    </tr>
+                    <tr>
+                        <td>emekapete@yahoo.com</td>
+                        <td>Emeka</td>
+                        <td>Pete</td>
+                        <td>cottage2100</td>
+                        <td>17a, thomas street maryland, Lagos</td>
+                        <td>Verified</td>
+                        <td><button type="submit" class="mark" id="verify">verify</button></td>
+                      </tr>
+                  </table>
+                  </div>
+               
+        </div>
+
+        <div id="allLoans" class="tabcontent">
+            <div id="main-section">
+                  <table id="main-table">
+                    <tr>
+                      <th>Id</th>
+                      <th>User</th>
+                      <th>Created On</th>
+                      <th>Status</th>
+                      <th>Repaid</th>
+                      <th>Tenor</th>
+                      <th>Amount</th>
+                      <th>Pay <br>Installment</th>
+                      <th>Balance</th>
+                      <th>Interest</th>
+                      
+                    </tr>
+                    <tr>
+                      <td>5677</td>
+                      <td>Emeka</td>
+                      <td>5/10/17</td>
+                      <td>pending</td>
+                      <td>false</td>
+                      <td>8 months</td>
+                      <td>800000</td>
+                      <td>400000</td>
+                      <td>400000</td>
+                      <td>40000</td>
+
+                    </tr>
+                    <tr>
+                        <td>5677</td>
+                        <td>Emeka</td>
+                        <td>5/10/17</td>
+                        <td>pending</td>
+                        <td>false</td>
+                        <td>8 months</td>
+                        <td>800000</td>
+                        <td>400000</td>
+                        <td>400000</td>
+                        <td>40000</td>
+                      </tr>
+                  </table>
+                  </div> 
+        </div>
+
+        
+        </div>
+      </div>
+      </div>
+<script src="admin.js"></script>
+   
+</body>
+</html> 
