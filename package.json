@@ -1,0 +1,29 @@
+{
+  "name": "credit-loan",
+  "version": "1.0.0",
+  "description": "A fintech web application that provides financial services to a finance driven community",
+  "main": "app.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motola/credit-loan.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "api",
+    "express"
+  ],
+  "author": "olutola moses",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/motola/credit-loan/issues"
+  },
+  "homepage": "https://github.com/motola/credit-loan#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}
