@@ -18,5 +18,19 @@ class Validate {
     }
     next();
   }
+
+  static loginUser(req, res, next) {
+    const schema = {
+      email: Joi.string().email({ minDomainSegments: 2 }),
+      password: Joi.string().regex(/^.{4,8}$/),
+    };
+
+    const result = Joi.validate(req.body, schema);
+    console.log(result);
+    if (result.error !== null) {
+      return res.status(400).json(result.error);
+    }
+    next();
+  }
 }
 export default Validate;

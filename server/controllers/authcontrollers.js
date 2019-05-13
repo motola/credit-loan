@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import users from '../model/user';
 
-// this auth
+// this auth business logic
 class UserController {
   // this is signup
   static postAllUser(req, res) {
