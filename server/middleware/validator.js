@@ -24,7 +24,6 @@ class Validate {
     };
 
     const result = Joi.validate(req.body, schema);
-    console.log(result);
     if (result.error !== null) {
       return res.status(400).json(result.error);
     }

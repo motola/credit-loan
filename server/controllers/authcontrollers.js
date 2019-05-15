@@ -7,9 +7,9 @@ class UserController {
   static postAllUser(req, res) {
     const newUserId = users.length + 1;
     const {
-      firstName, lastName, email, address,
+      firstName, lastName, email, address, password,
     } = req.body;
-    const hashedPassword = hash.hashPassword(req.body.password);
+    const hashedPassword = hash.hashPassword(password);
     const { token } = req;
     const checkEmail = users.find(user => user.email === req.body.email);
     if (checkEmail) {
@@ -48,18 +48,17 @@ class UserController {
   static loginAUser(req, res) {
     const { email, password } = req.body;
     const userMail = users.find(user => user.email === email);
-    const userPass = hash.verifyPassword(userMail.password, password);
+    const userPass = hash.verifyPassword(password, userMail.password);
     if (userMail && userPass) {
-      const member = users.find(user => user.email === email);
       const { token } = req;
       return res.status(200).send({
         status: 200,
         data: {
           token,
-          id: member.id,
-          firstName: member.firstName,
-          lastName: member.lastName,
-          email: member.email,
+          id: userMail.id,
+          firstName: userMail.firstName,
+          lastName: userMail.lastName,
+          email: userMail.email,
 
         },
       });
@@ -69,29 +68,6 @@ class UserController {
       status: 404,
       errors: 'user unseen',
     });
-  }
-
-  // mark a user as verify
-  static verifyUser(req, res) {
-    const verifyUser = users.find(user => user.email === req.params.email);
-
-    if (verifyUser) {
-      verifyUser.status = 'verified';
-      const newStatus = verifyUser.status;
-      return res.status(200).send({
-        status: 200,
-        Message: 'Verified successfully',
-        data: {
-          email: verifyUser.email,
-          firstName: verifyUser.firstName,
-          lastName: verifyUser.lastName,
-          password: verifyUser.password,
-          address: verifyUser.address,
-          status: newStatus,
-          // Date: new Date().toLocaleString(),
-        },
-      });
-    }
   }
 }
 
