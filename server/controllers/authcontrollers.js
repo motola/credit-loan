@@ -69,6 +69,27 @@ class UserController {
       errors: 'user unseen',
     });
   }
+
+  static verifyUser(req, res) {
+    const verifyUser = users.find(user => user.email === req.params.email);
+
+    if (verifyUser) {
+      verifyUser.status = 'verified';
+      const newStatus = verifyUser.status;
+      return res.status(200).send({
+        status: 200,
+        Message: 'Verified successfully',
+        data: {
+          email: verifyUser.email,
+          firstName: verifyUser.firstName,
+          lastName: verifyUser.lastName,
+          password: verifyUser.password,
+          address: verifyUser.address,
+          status: newStatus,
+        },
+      });
+    }
+  }
 }
 
 
