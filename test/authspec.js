@@ -12,12 +12,11 @@ describe('User Authentication', () => {
   describe('POST/ Create a User Account', () => {
     it('should register user', (done) => {
       const user = {
-        token: 'fh6ff6f6f6f',
-        id: 1,
         firstName: 'ahmed',
         lastName: 'musa',
         email: 'ahumedmusa@gmail.com',
         password: 'hidden',
+        address: '6, mobolaji way anthony',
       };
       chai.request(app)
         .post('/api/v1/auth/signup')
@@ -37,6 +36,7 @@ describe('User Authentication', () => {
         lastName: 'musa',
         email: 'ahumedmusa@gmail.com',
         password: 'hidden',
+        address: '6, mobolaji way anthony',
       };
       chai.request(app)
         .post('/api/v1/auth/signup')
@@ -56,6 +56,7 @@ describe('User Authentication', () => {
         lastName: '',
         email: 'ahumedmusa@gmail.com',
         password: 'hidden',
+        address: '6, mobolaji way anthony',
       };
       chai.request(app)
         .post('/api/v1/auth/signup')
@@ -75,6 +76,7 @@ describe('User Authentication', () => {
         lastName: '',
         email: '',
         password: 'hidden',
+        address: '6, mobolaji way anthony',
       };
       chai.request(app)
         .post('/api/v1/auth/signup')
@@ -94,6 +96,7 @@ describe('User Authentication', () => {
         lastName: 'moruff',
         email: 'mosh@gmail.com',
         password: '',
+        address: '6, mobolaji way anthony',
       };
       chai.request(app)
         .post('/api/v1/auth/signup')
@@ -106,4 +109,5 @@ describe('User Authentication', () => {
         });
     });
   });
+  // Sign up unit test ends here
 });

@@ -8,7 +8,7 @@ const users = [
     email: 'johnmosh@gmail.com',
     address: '4th, parkwell blind, rivers',
     status: 'unverified',
-    isAdmin: false,
+    isAdmin: true,
   },
   {
     id: 2,
@@ -24,4 +24,3 @@ const users = [
 
 
 export default users;
-
