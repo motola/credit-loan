@@ -54,13 +54,14 @@ nav ul {
 /* style for sign in nav */
 nav li {
     color:	#0000FF;
-    width: 60px;
+    width: 100px;
     border: 1px solid	#0000FF;
+    padding: 5%;
     border-radius: 15px;
-    padding: 3px;
     text-align:center;
   
 }
+
 /* style for hovering */
 nav li:hover {
     color:#000080;
@@ -75,6 +76,7 @@ nav li:hover {
     background-color:	#0000FF;
     padding: 0.5%;
     color:#fff;
+    text-align: center;
 
 }
 
@@ -140,12 +142,11 @@ input {
 }
 /* style for sign up button*/
 
-input[type=submit],value {
-    width: 25%;
+input[type=submit]{
+    width: 70px;
     margin-top: 5%;
     margin-left: 18%;
     padding: 2%;
-
     border:1px solid #0000FF;
     font-family: 'century Gothic' Courier New, Courier, monospace;
     border-radius: 3px;
