@@ -110,4 +110,20 @@ describe('User Authentication', () => {
     });
   });
   // Sign up unit test ends here
+  // signin unit test begins here
+  describe('POST/ sign in an account', () => {
+    it('should sign in a user', (done) => {
+      const email = 'johnmosh@gmail.com';
+      const password = 'fhdfkf';
+      chai.request(app)
+        .post('/api/v1/auth/signin')
+        .send({ email, password })
+        .end((err, res) => {
+          res.should.have.status(200);
+          res.should.be.an('object');
+
+          done();
+        });
+    });
+  });
 });
