@@ -13,5 +13,6 @@ route.patch('/api/v1/users/:email/verify', [auth.generateToken, admin.isAdmin], 
 // loans route and controllers
 
 route.get('/api/v1/loans', [auth.generateToken, admin.isAdmin], loanController.getallLoans);
+route.get('/api/v1/loans/:id', loanController.getSingleLoan);
 
 export default route;
