@@ -7,7 +7,7 @@ class hash {
   }
 
   static verifyPassword(hashPassword, password) {
-    return bcrypt.compareSync(password, hashPassword);
+    return bcrypt.compare(hashPassword, password);
   }
 }
 export default hash;

@@ -6,6 +6,7 @@ import userController from '../controllers/authcontrollers';
 
 const route = express.Router();
 route.post('/api/v1/auth/signup', [validator.postUser, auth.generateToken], userController.postAllUser);
+route.post('/api/v1/auth/signin', validator.loginUser, userController.loginAUser);
 
 
 export default route;
