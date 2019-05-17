@@ -45,10 +45,10 @@ class UserController {
   // end of Auth sign up
 
   // login a user
-  static loginAUser(req, res) {
+  static async loginAUser(req, res) {
     const { email, password } = req.body;
     const userMail = users.find(user => user.email === email);
-    const userPass = hash.verifyPassword(password, userMail.password);
+    const userPass = await hash.verifyPassword(password, userMail.password);
     if (userMail && userPass) {
       const { token } = req;
       return res.status(200).send({

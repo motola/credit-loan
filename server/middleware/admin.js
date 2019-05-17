@@ -11,15 +11,17 @@ class adminAuth {
       if (error) {
         return res.status(400).send({ error: 'invalid token' });
       }
-      if (!req.user.isAdmin === 'true') {
-        return next();
+      if (!req.user.isAdmin) {
+        res.status(403).send({
+          status: 403,
+          Message: 'Unathorized',
+        });
       }
-    });
-
-    return next();
+      next();
     // const { isAdmin } = req.user;
     // if (isAdmin === false) return res.status(403).send('Acess denied');
     // next();
+    });
   }
 }
 
