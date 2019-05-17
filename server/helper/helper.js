@@ -6,8 +6,9 @@ class hash {
     return bcrypt.hashSync(password, bcrypt.genSaltSync(10));
   }
 
-  static verifyPassword(hashPassword, password) {
-    return bcrypt.compare(hashPassword, password);
+  static async verifyPassword(password, hashPassword) {
+    const match = await bcrypt.compare(password, hashPassword);
+    return match;
   }
 }
 export default hash;

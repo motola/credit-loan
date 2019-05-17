@@ -2,7 +2,7 @@ const loans = [
   {
     id: 1,
     createdOn: '1960 12 1',
-    status: 'approved',
+    status: 'pending',
     repaid: false,
     tenor: 11,
     amount: 50000,
@@ -14,7 +14,7 @@ const loans = [
   {
     id: 2,
     createdOn: '1960 12 1',
-    status: 'approved',
+    status: 'pending',
     repaid: true,
     tenor: 11,
     amount: 50000,
@@ -25,7 +25,7 @@ const loans = [
   {
     id: 3,
     createdOn: '1960 12 1',
-    status: 'approved',
+    status: 'pending',
     repaid: true,
     tenor: 11,
     amount: 50000,
