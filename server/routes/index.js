@@ -4,6 +4,7 @@ import auth from '../middleware/auth';
 import admin from '../middleware/admin';
 import userController from '../controllers/authcontrollers';
 import loanController from '../controllers/loancontrollers';
+import repayment from '../controllers/repaymentscontroller';
 
 const route = express.Router();
 route.post('/api/v1/auth/signup', [validator.postUser, auth.generateToken], userController.postAllUser);
@@ -14,5 +15,8 @@ route.patch('/api/v1/users/:email/verify', [auth.generateToken, admin.isAdmin], 
 
 route.get('/api/v1/loans', [auth.generateToken, admin.isAdmin], loanController.getallLoans);
 route.get('/api/v1/loans/:id', loanController.getSingleLoan);
+
+// route for repayments
+route.get('/api/v1/loans/:loanId/repayments', [auth.generateToken, admin.isAdmin], repayment.viewHistory);
 
 export default route;
